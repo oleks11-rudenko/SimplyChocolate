@@ -1,0 +1,115 @@
+/* #region Common */
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #111111;
+  background-color: #fafafa;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  color: currentColor;
+}
+
+img {
+  display: block;
+}
+
+main {
+  flex-grow: 1;
+}
+
+section {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 80px;
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  section {
+    padding-bottom: 120px;
+  }
+}
+
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+
+input {
+  font-family: inherit;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+/* #endregion */
+
+.hero-scroll-icon {
+  stroke: black;
+}
