@@ -17,50 +17,52 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="menu">
-      <div class="container">
-        <a href="menu-close-link">
-          <svg class="menu-close-icon" width="28" height="28">
-            <use href="./images/icons.svg#close"></use>
-          </svg>
-        </a>
-        <nav class="menu-nav">
-          <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="#"></a>Home</li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"></a>How it’s made?
+    <div class="menu-backdrop">
+      <div class="menu">
+        <div class="container">
+          <button class="menu-close-button">
+            <svg class="menu-close-icon" width="28" height="28">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+          <nav class="menu-nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a class="nav-link" href="#"></a>Home</li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>How it’s made?
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>Chocolate is loved
+              </li>
+            </ul>
+          </nav>
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a class="socials-link" href="https://facebook.com/">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"></a>Chocolate is loved
+            <li class="socials-item">
+              <a class="socials-link" href="https://instagram.com/">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link" href="https://twitter.com/">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="socials-list">
-          <li class="socials-item">
-            <a class="socials-link" href="https://facebook.com/">
-              <svg class="socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-item">
-            <a class="socials-link" href="https://instagram.com/">
-              <svg class="socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-item">
-            <a class="socials-link" href="https://twitter.com/">
-              <svg class="socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </div>
-    <header class="header">
+    <header class="header hide">
       <div class="container">
         <nav class="header-nav">
           <a class="logo-link" href="index.html">
@@ -69,11 +71,11 @@
               <use href="./images/icons.svg#logo"></use>
             </svg>
           </a>
-          <a class="menu-link" href="#">
+          <button class="menu-button">
             <svg class="menu-icon" width="21" height="14">
               <use href="./images/icons.svg#menu"></use>
             </svg>
-          </a>
+          </button>
           <ul class="nav-list">
             <li class="nav-item">
               <a class="nav-link" href="#">Home</a>
@@ -112,7 +114,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero hide">
         <div class="container">
           <picture>
             <!-- Desktop -->
@@ -151,8 +153,8 @@
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
-          <button class="hero-left-button">Buy now</button>
-          <button class="hero-right-button">How it’s made</button>
+          <button class="button buy">Buy now</button>
+          <button class="button made">How it’s made</button>
           <a class="hero-scroll-link" href="#"
             >scroll down
             <svg class="hero-scroll-icon" width="16" height="16">
@@ -161,7 +163,7 @@
           </a>
         </div>
       </section>
-      <section class="benefits">
+      <section class="benefits hide">
         <div class="container">
           <ul class="benefits-list">
             <li class="benefits-item">
@@ -204,7 +206,7 @@
           </ul>
         </div>
       </section>
-      <section class="ingredients">
+      <section class="ingredients hide">
         <div class="container">
           <h2 class="section-title">
             It all adds up to one exceptional
@@ -431,44 +433,49 @@
           </ul>
         </div>
       </section>
-      <section class="howitismade">
+      <section class="howitismade hide">
         <div class="container">
           <h2 class="section-title">
             How it’s <span class="section-title-special">made</span>?
           </h2>
-          <picture>
-            <!-- Desktop -->
-            <source
-              media="(min-width: 1280px)"
-              srcset="
-                ./images/howitismade/img-desk@1x.jpg 1x,
-                ./images/howitismade/img-desk@2x.jpg 2x
-              "
-            />
-            <!-- Tablet -->
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                ./images/howitismade/img-tab@1x.jpg 1x,
-                ./images/howitismade/img-tab@2x.jpg 2x
-              "
-            />
-            <!-- Mobile -->
-            <source
-              media="(max-width: 767px)"
-              srcset="
-                ./images/howitismade/img-mob@1x.jpg 1x,
-                ./images/howitismade/img-mob@2x.jpg 2x
-              "
-            />
-            <img
-              class="howitismade-image"
-              src="./images/howitismade/img-desk@1x.jpg"
-              alt="How It is Made Video"
-              width="600"
-              height="400"
-            />
-          </picture>
+          <div class="howitismade-video">
+            <picture>
+              <!-- Desktop -->
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/howitismade/img-desk@1x.jpg 1x,
+                  ./images/howitismade/img-desk@2x.jpg 2x
+                "
+              />
+              <!-- Tablet -->
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/howitismade/img-tab@1x.jpg 1x,
+                  ./images/howitismade/img-tab@2x.jpg 2x
+                "
+              />
+              <!-- Mobile -->
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/howitismade/img-mob@1x.jpg 1x,
+                  ./images/howitismade/img-mob@2x.jpg 2x
+                "
+              />
+              <img
+                class="howitismade-image"
+                src="./images/howitismade/img-desk@1x.jpg"
+                alt="How It is Made Video"
+                width="600"
+                height="400"
+              />
+            </picture>
+            <svg class="howitismade-icon" width="44" height="44">
+              <use href="./images/icons.svg#play"></use>
+            </svg>
+          </div>
           <div class="howitismade-wrapper">
             <h3 class="howitismade-title">
               Try our chocolates today and discover the perfect balance of
@@ -498,7 +505,7 @@
           </div>
         </div>
       </section>
-      <section class="products">
+      <section class="products hide">
         <div class="container">
           <h2 class="section-title">
             Our <span class="section-title-special">products</span>
@@ -627,11 +634,273 @@
           </ul>
         </div>
       </section>
-      <section class="topsellers"><div class="container"></div></section>
-      <section class="reviews"><div class="container"></div></section>
+      <section class="topsellers hide">
+        <div class="container">
+          <h2 class="section-title">
+            <span class="section-title-special">Top</span> Sellers
+          </h2>
+          <ul class="topsellers-list">
+            <li class="topsellers-item">
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/topsellers/img-1-desk@1x.png 1x,
+                    ./images/topsellers/img-1-desk@2x.png 2x
+                  "
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/topsellers/img-1-tab@1x.png 1x,
+                    ./images/topsellers/img-1-tab@2x.png 2x
+                  "
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/topsellers/img-1-mob@1x.png 1x,
+                    ./images/topsellers/img-1-mob@2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/topsellers/img-1-desk@1x.png"
+                  alt="Chocolate with nuts"
+                  width="368"
+                  height="464"
+                />
+              </picture>
+              <p class="topsellers-caption">Chocolate with nuts</p>
+            </li>
+            <li class="topsellers-item">
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/topsellers/img-2-desk@1x.png 1x,
+                    ./images/topsellers/img-2-desk@2x.png 2x
+                  "
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/topsellers/img-2-tab@1x.png 1x,
+                    ./images/topsellers/img-2-tab@2x.png 2x
+                  "
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/topsellers/img-2-mob@1x.png 1x,
+                    ./images/topsellers/img-2-mob@2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/topsellers/img-2-desk@1x.png"
+                  alt="Chocolate with fruits"
+                  width="368"
+                  height="464"
+                />
+              </picture>
+              <p class="topsellers-caption">Chocolate with fruits</p>
+            </li>
+            <li class="topsellers-item">
+              <picture>
+                <!-- Desktop -->
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/topsellers/img-3-desk@1x.png 1x,
+                    ./images/topsellers/img-3-desk@2x.png 2x
+                  "
+                />
+                <!-- Tablet -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/topsellers/img-3-tab@1x.png 1x,
+                    ./images/topsellers/img-3-tab@2x.png 2x
+                  "
+                />
+                <!-- Mobile -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/topsellers/img-3-mob@1x.png 1x,
+                    ./images/topsellers/img-3-mob@2x.png 2x
+                  "
+                />
+                <img
+                  src="./images/topsellers/img-3-desk@1x.png"
+                  alt="Dark chocolate"
+                  width="368"
+                  height="464"
+                />
+              </picture>
+              <p class="topsellers-caption">Dark chocolate</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews hide">
+        <div class="container">
+          <h2 class="section-title">
+            <span class="section-title-special">Chocolate</span> is loved
+          </h2>
+          <ul class="reviews-list">
+            <li class="reviews-item">
+              <img
+                srcset="
+                  ./images/reviews/img-1@1x.png 1x,
+                  ./images/reviews/img-1@2x.png 2x
+                "
+                src="./images/reviews/img-1@1x.png"
+                alt="Victoria Dobrzhanska"
+                width="80"
+                height="80"
+              />
+              <h3 class="reviews-name">Victoria Dobrzhanska</h3>
+              <p class="reviews-text">
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
+              </p>
+            </li>
+            <li class="reviews-item">
+              <img
+                srcset="
+                  ./images/reviews/img-2@1x.png 1x,
+                  ./images/reviews/img-2@2x.png 2x
+                "
+                src="./images/reviews/img-2@1x.png"
+                alt="Nazar Babenko"
+                width="80"
+                height="80"
+              />
+              <h3 class="reviews-name">Nazar Babenko</h3>
+              <p class="reviews-text">
+                This chocolate confection is a delight! A delight! The wafer is
+                light and crisp, the hazelnut cream is smooth, and the chocolate
+                is good.
+              </p>
+            </li>
+            <li class="reviews-item">
+              <img
+                srcset="
+                  ./images/reviews/img-3@1x.png 1x,
+                  ./images/reviews/img-3@2x.png 2x
+                "
+                src="./images/reviews/img-3@1x.png"
+                alt="Olena Kampusch"
+                width="80"
+                height="80"
+              />
+              <h3 class="reviews-name">Olena Kampusch</h3>
+              <p class="reviews-text">
+                Chocolate is a family favourite treat. Love the delicious smooth
+                chocolate and the creaminess inside. The wafer is soft but
+                crunchy.
+              </p>
+            </li>
+            <button class="button">Leave a review</button>
+          </ul>
+        </div>
+      </section>
     </main>
-    <div class="modal">
-      <div class="container"></div>
+    <div class="modal-backdrop">
+      <div class="modal">
+        <div class="container">
+          <button class="modal-close-button">
+            <svg class="modal-icon-close" width="28" height="28">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+          <h2 class="section-title">
+            Leave a review about
+            <span class="section-title-special">our chocolate</span>
+          </h2>
+          <form class="modal-form" name="review">
+            <div class="form-label">
+              <label class="modal-label" for="user-name">Name</label>
+              <div class="modal-wrapper">
+                <input
+                  class="modal-input"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                />
+                <svg class="modal-input-icon" width="24" height="24">
+                  <use href="./images/icons.svg#user"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-label">
+              <label class="modal-label" for="user-mail">Email</label>
+              <div class="modal-wrapper">
+                <input
+                  class="modal-input"
+                  type="email"
+                  name="user-mail"
+                  id="user-mail"
+                />
+                <svg class="modal-input-icon" width="24" height="24">
+                  <use href="./images/icons.svg#mail"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-label">
+              <label class="modal-label" for="user-phone">Phone number</label>
+              <div class="modal-wrapper">
+                <input
+                  class="modal-input"
+                  type="tel"
+                  name="user-phone"
+                  id="user-phone"
+                />
+                <svg class="modal-input-icon" width="24" height="24">
+                  <use href="./images/icons.svg#user"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="textarea-label">
+              <label class="modal-label" for="user-comment">Comment</label>
+              <textarea
+                class="modal-textarea"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Enter text"
+              ></textarea>
+            </div>
+            <div class="checkbox-label">
+              <input
+                class="visually-hidden"
+                value="true"
+                type="checkbox"
+                name="user-privacy"
+                id="user-privacy"
+                required
+              />
+              <label class="checkbox-text" for="user-privacy">
+                <span class="modal-checkbox">
+                  <svg class="modal-checkbox-icon" width="20" height="20">
+                    <use href="./images/icons.svg#check"></use>
+                  </svg>
+                </span>
+                <span class="checkbox-text-wrapper">
+                  I accept the terms and conditions of the
+                  <a class="modal-link" href="#">Privacy Policy</a>
+                </span>
+              </label>
+            </div>
+            <button class="button" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
     </div>
     <footer class="footer">
       <div class="container"></div>
