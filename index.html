@@ -20,7 +20,7 @@
     <div class="menu-backdrop">
       <div class="menu">
         <div class="container">
-          <button class="menu-close-button">
+          <button class="menu-close-button" type="button">
             <svg class="menu-close-icon" width="28" height="28">
               <use href="./images/icons.svg#close"></use>
             </svg>
@@ -71,7 +71,7 @@
               <use href="./images/icons.svg#logo"></use>
             </svg>
           </a>
-          <button class="menu-button">
+          <button class="menu-button" type="button">
             <svg class="menu-icon" width="21" height="14">
               <use href="./images/icons.svg#menu"></use>
             </svg>
@@ -153,8 +153,8 @@
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
-          <button class="button buy">Buy now</button>
-          <button class="button made">How it’s made</button>
+          <button class="button buy" type="button">Buy now</button>
+          <button class="button made" type="button">How it’s made</button>
           <a class="hero-scroll-link" href="#"
             >scroll down
             <svg class="hero-scroll-icon" width="16" height="16">
@@ -807,15 +807,15 @@
                 crunchy.
               </p>
             </li>
-            <button class="button">Leave a review</button>
           </ul>
+          <button class="button" type="button">Leave a review</button>
         </div>
       </section>
     </main>
-    <div class="modal-backdrop">
+    <div class="modal-backdrop hide">
       <div class="modal">
         <div class="container">
-          <button class="modal-close-button">
+          <button class="modal-close-button" type="button">
             <svg class="modal-icon-close" width="28" height="28">
               <use href="./images/icons.svg#close"></use>
             </svg>
@@ -902,8 +902,61 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="container"></div>
+    <footer class="footer hide">
+      <div class="container">
+        <h2 class="footer-title">Chocolate a delicious cure for a bad day</h2>
+        <address class="address">
+          <p class="footer-text">Contact us</p>
+          <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+          <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+        </address>
+        <div class="footer-socials">
+          <p class="footer-text">Social networks</p>
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a class="socials-link" href="https://facebook.com/">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link" href="https://instagram.com/">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link" href="https://twitter.com/">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">How it’s made?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chocolate is loved</a>
+          </li>
+        </ul>
+        <form class="subscribe-form" name="subscribe">
+          <input
+            class="subscribe-email"
+            type="email"
+            name="user-email"
+            id="user-email"
+          />
+          <button class="button" type="submit">Subscribe</button>
+        </form>
+      </div>
     </footer>
   </body>
 </html>
