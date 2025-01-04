@@ -19,20 +19,71 @@
   <body>
     <div class="menu-backdrop">
       <div class="menu">
-        <div class="container">
-          <button class="menu-close-button" type="button">
-            <svg class="menu-close-icon" width="28" height="28">
-              <use href="./images/icons.svg#close"></use>
-            </svg>
-          </button>
-          <nav class="menu-nav">
+        <button class="menu-close-button" type="button">
+          <svg class="menu-close-icon" width="28" height="28">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="menu-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#"></a>Home</li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>How it’s made?
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>Chocolate is loved
+            </li>
+          </ul>
+        </nav>
+        <ul class="socials-list">
+          <li class="socials-item">
+            <a class="socials-link" href="https://facebook.com/">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link" href="https://instagram.com/">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a class="socials-link" href="https://twitter.com/">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <nav class="header-nav">
+            <a class="logo-link" href="index.html">
+              <span class="logo-link-italic">SIMPLY</span> CHOCOLATE
+              <svg class="logo-icon" width="21" height="21">
+                <use href="./images/icons.svg#logo-chocolate"></use>
+              </svg>
+            </a>
+            <button class="menu-button" type="button">
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#menu"></use>
+              </svg>
+            </button>
             <ul class="nav-list">
-              <li class="nav-item"><a class="nav-link" href="#"></a>Home</li>
               <li class="nav-item">
-                <a class="nav-link" href="#"></a>How it’s made?
+                <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"></a>Chocolate is loved
+                <a class="nav-link" href="#">How it’s made?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chocolate is loved</a>
               </li>
             </ul>
           </nav>
@@ -60,57 +111,6 @@
             </li>
           </ul>
         </div>
-      </div>
-    </div>
-    <header class="header hide">
-      <div class="container">
-        <nav class="header-nav">
-          <a class="logo-link" href="index.html">
-            <span class="logo-link-italic">SIMPLY</span> CHOCOLATE
-            <svg class="logo-icon" width="21" height="21">
-              <use href="./images/icons.svg#logo"></use>
-            </svg>
-          </a>
-          <button class="menu-button" type="button">
-            <svg class="menu-icon" width="21" height="14">
-              <use href="./images/icons.svg#menu"></use>
-            </svg>
-          </button>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">How it’s made?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Chocolate is loved</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="socials-list">
-          <li class="socials-item">
-            <a class="socials-link" href="https://facebook.com/">
-              <svg class="socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-item">
-            <a class="socials-link" href="https://instagram.com/">
-              <svg class="socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-item">
-            <a class="socials-link" href="https://twitter.com/">
-              <svg class="socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
     <main class="main">
@@ -814,92 +814,90 @@
     </main>
     <div class="modal-backdrop hide">
       <div class="modal">
-        <div class="container">
-          <button class="modal-close-button" type="button">
-            <svg class="modal-icon-close" width="28" height="28">
-              <use href="./images/icons.svg#close"></use>
-            </svg>
-          </button>
-          <h2 class="section-title">
-            Leave a review about
-            <span class="section-title-special">our chocolate</span>
-          </h2>
-          <form class="modal-form" name="review">
-            <div class="form-label">
-              <label class="modal-label" for="user-name">Name</label>
-              <div class="modal-wrapper">
-                <input
-                  class="modal-input"
-                  type="text"
-                  name="user-name"
-                  id="user-name"
-                />
-                <svg class="modal-input-icon" width="24" height="24">
-                  <use href="./images/icons.svg#user"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="form-label">
-              <label class="modal-label" for="user-mail">Email</label>
-              <div class="modal-wrapper">
-                <input
-                  class="modal-input"
-                  type="email"
-                  name="user-mail"
-                  id="user-mail"
-                />
-                <svg class="modal-input-icon" width="24" height="24">
-                  <use href="./images/icons.svg#mail"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="form-label">
-              <label class="modal-label" for="user-phone">Phone number</label>
-              <div class="modal-wrapper">
-                <input
-                  class="modal-input"
-                  type="tel"
-                  name="user-phone"
-                  id="user-phone"
-                />
-                <svg class="modal-input-icon" width="24" height="24">
-                  <use href="./images/icons.svg#user"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="textarea-label">
-              <label class="modal-label" for="user-comment">Comment</label>
-              <textarea
-                class="modal-textarea"
-                name="user-comment"
-                id="user-comment"
-                placeholder="Enter text"
-              ></textarea>
-            </div>
-            <div class="checkbox-label">
+        <button class="modal-close-button" type="button">
+          <svg class="modal-icon-close" width="28" height="28">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <h2 class="section-title">
+          Leave a review about
+          <span class="section-title-special">our chocolate</span>
+        </h2>
+        <form class="modal-form" name="review">
+          <div class="form-label">
+            <label class="modal-label" for="user-name">Name</label>
+            <div class="modal-wrapper">
               <input
-                class="visually-hidden"
-                value="true"
-                type="checkbox"
-                name="user-privacy"
-                id="user-privacy"
-                required
+                class="modal-input"
+                type="text"
+                name="user-name"
+                id="user-name"
               />
-              <label class="checkbox-text" for="user-privacy">
-                <span class="modal-checkbox">
-                  <svg class="modal-checkbox-icon" width="20" height="20">
-                    <use href="./images/icons.svg#check"></use>
-                  </svg>
-                </span>
-                <span class="checkbox-text-wrapper">
-                  I accept the terms and conditions of the
-                  <a class="modal-link" href="#">Privacy Policy</a>
-                </span>
-              </label>
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="./images/icons.svg#user"></use>
+              </svg>
             </div>
-            <button class="button" type="submit">Send</button>
-          </form>
-        </div>
+          </div>
+          <div class="form-label">
+            <label class="modal-label" for="user-mail">Email</label>
+            <div class="modal-wrapper">
+              <input
+                class="modal-input"
+                type="email"
+                name="user-mail"
+                id="user-mail"
+              />
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-label">
+            <label class="modal-label" for="user-phone">Phone number</label>
+            <div class="modal-wrapper">
+              <input
+                class="modal-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+              />
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="./images/icons.svg#user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="textarea-label">
+            <label class="modal-label" for="user-comment">Comment</label>
+            <textarea
+              class="modal-textarea"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <div class="checkbox-label">
+            <input
+              class="visually-hidden"
+              value="true"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              required
+            />
+            <label class="checkbox-text" for="user-privacy">
+              <span class="modal-checkbox">
+                <svg class="modal-checkbox-icon" width="20" height="20">
+                  <use href="./images/icons.svg#check"></use>
+                </svg>
+              </span>
+              <span class="checkbox-text-wrapper">
+                I accept the terms and conditions of the
+                <a class="modal-link" href="#">Privacy Policy</a>
+              </span>
+            </label>
+          </div>
+          <button class="button" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <footer class="footer hide">
