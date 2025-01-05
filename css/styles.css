@@ -421,7 +421,7 @@ input {
   margin-bottom: 80px;
 }
 
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-resolution: 192dpi) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(
         rgba(17, 17, 17, 0.4),
@@ -447,8 +447,7 @@ input {
   }
 }
 
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(
         rgba(17, 17, 17, 0.4),
@@ -473,8 +472,7 @@ input {
   }
 }
 
-@media only screen and (min-width: 1200px) and (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media only screen and (min-width: 1200px) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(
         rgba(17, 17, 17, 0.4),
