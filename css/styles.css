@@ -418,6 +418,7 @@ input {
   background-position: center;
   padding-top: 395px;
   padding-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -436,6 +437,7 @@ input {
     height: 890px;
     padding-top: 671px;
     padding-bottom: 40px;
+    margin-bottom: 40px;
     background-color: #6e6e6e;
     background-image: linear-gradient(
         rgba(17, 17, 17, 0.4),
@@ -462,6 +464,7 @@ input {
     height: 600px;
     padding-top: 381px;
     padding-bottom: 40px;
+    margin-bottom: 80px;
     background-image: linear-gradient(
         rgba(17, 17, 17, 0.4),
         rgba(17, 17, 17, 0.4)
@@ -672,21 +675,96 @@ input {
 /* #region Benefits */
 
 .benefits {
+  background-color: #1e1823;
+  padding: 20px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .benefits .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .benefits .container {
+    padding: 50px;
+  }
 }
 
 .benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.benefits-item {
+@media only screen and (min-width: 768px) {
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 88px;
+    row-gap: 44px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .benefits-list {
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits-item {
+    width: calc((100% - 88px) / 2);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .benefits-item:not(:last-child) {
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .benefits-item::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: -44px;
+    width: 1px;
+    height: 124px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+  }
+}
+
+.benefits-icon-wrapper {
+  display: flex;
+  width: 62px;
+  height: 62px;
+  padding: 15px;
+  margin-bottom: 22px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .benefits-icon {
+  fill: #fd9222;
 }
 
 .benefits-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 18px;
 }
 
 .benefits-text {
+  max-width: 308px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  letter-spacing: -0.02em;
 }
 
 /* #endregion */
